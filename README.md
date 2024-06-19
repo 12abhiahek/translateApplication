@@ -1,10 +1,43 @@
-Create an application to upload a document, choose language and translate into that language and download option.
-Using Google translate API for this. 
+This project is a document translation application that allows users to upload a document, choose a language for translation, and download the translated document. The application uses the Google Translate API for translation services.
 
-a) First login page with userid/pass. This will be match from database. 
-b) After login, open a page where a table list will be appeared. This list will have such columns. i) Sr no ii) File name iii) Upload date iv) Download
-c) There will be a button on top upload a file. On clicking on this button open a page where browser button and translate language dropdown. This dropdown will have following languages. ( "lang_code": "hi-IN",
- "lang_name": "Hindi" and "lang_code": "bn", "lang_name": "Bengali (Bangla)")
-d) This uploaded document will be passed to google translation API. Translated document will be save also in local directory for download
+1. User Authentication: 
+Login page with user ID and password verification.
+User credentials are matched from the database.
 
-Tech stack: spring boot 3, mysql, hibernate and html/jsp pages OR you can use angular front end if problem to use jsp.
+2. Document Management:
+After login, users are redirected to a page with a table listing uploaded documents.
+The table contains columns for:
+Sr no
+File name
+Upload date
+Download link for the translated document.
+
+3. File Upload and Translation:
+
+An upload button on the document list page allows users to upload new documents.
+Upon clicking the upload button, users are taken to a page where they can browse for a document and select a language for translation.
+Supported languages include:
+Hindi (hi-IN)
+Bengali (Bangla) (bn).
+
+4. Translation and Download:
+
+Uploaded documents are sent to the Google Translate API for translation.
+Translated documents are saved locally and made available for download.
+
+Backend:
+Spring Boot 3
+MySQL
+Hibernate
+
+Frontend:
+HTML/JSP pages
+
+
+Setup Instructions
+Prerequisites
+JDK 11 or higher
+Maven
+MySQL
+
+**Still I'am working on downloading and uploading document.
